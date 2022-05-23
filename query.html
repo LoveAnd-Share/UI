@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+  	    $("#c").click(function(){
+              var xhr = new XMLHttpRequest();
+              xhr.open('get','http://localhost:5791/Teacher/Retrieve');
+              xhr.onload = function()
+              {
+                  alert(xhr.responseText);
+              }
+              xhr.send();
+          });
+        });
+    </script>
+</head>
+<body>
+    <button id="c">增加</button>
+    <button id="r">查找</button>
+    <button id="u">更改</button>
+    <button id="d">删除</button>
+    <div class="table-d">
+        <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>老师</th>
+                    <th>年龄</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
