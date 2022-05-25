@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open query.html",
-            "file": "c:\\Users\\hcz\\Desktop\\UI\\query.html"
+            "file": "c:\\Users\\18361\\Desktop\\UI\\index.html"
         }
     ]
 }

@@ -15,7 +15,7 @@
 		  var password = document.getElementById("pwd").value;
 		//alert("用户名"+userno + "密码："+password);
 		var xhr = new XMLHttpRequest();
-		xhr.open('get','http://localhost:5791/Teacher/Login?userNo='+userno+'&password='+password);
+		xhr.open('get','http://120.26.194.198:5100/EFLogin/Login?userNo='+userno+'&password='+password);
 		xhr.onload = function()
 		{
             if(xhr.responseText == 'success')
