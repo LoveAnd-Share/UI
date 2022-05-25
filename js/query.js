@@ -11,8 +11,7 @@ var org;
                   for (let index = 0; index < org.students.length; index++) {
                     $("tbody").append(
                      "<tr><td>"+org.students[index].id+"</td><td>"+org.students[index].name+"</td><td>"+org.students[index].tename+"</td><td>"+org.students[index].age+"</td></tr>"            
-                    );
-                      
+                    );                     
                   }                                                                                                
               }
               xhr.send();
