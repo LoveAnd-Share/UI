@@ -1,4 +1,4 @@
-var org;
+var data;
         $(document).ready(function(){
   	    $("#c").click(function(){
               var xhr = new XMLHttpRequest();
@@ -6,11 +6,11 @@ var org;
               xhr.open('get','http://localhost:5791/EFStudent/PageStudent?pageIndex=6&pageSize=10',true);
               xhr.onload = function()
               {
-                  org = JSON.parse('{"students":'+xhr.responseText+'}');
+                  data = JSON.parse(xhr.responseText);
                   //alert(org.students[5].id);
-                  for (let index = 0; index < org.students.length; index++) {
+                  for (let index = 0; index < data.length; index++) {
                     $("tbody").append(
-                     "<tr><td>"+org.students[index].id+"</td><td>"+org.students[index].name+"</td><td>"+org.students[index].tename+"</td><td>"+org.students[index].age+"</td></tr>"            
+                     "<tr><td>"+data[index].id+"</td><td>"+data[index].name+"</td><td>"+data[index].teName+"</td><td>"+data[index].age+"</td></tr>"            
                     );                     
                   }                                                                                                
               }
