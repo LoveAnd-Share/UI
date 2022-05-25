@@ -6,19 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="js/jquery-3.6.0.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-  	    $("#c").click(function(){
-              var xhr = new XMLHttpRequest();
-              xhr.open('get','http://localhost:5791/Teacher/Retrieve');
-              xhr.onload = function()
-              {
-                  alert(xhr.responseText);
-              }
-              xhr.send();
-          });
-        });
-    </script>
+    <script src="js/query.js"></script>
 </head>
 <body>
     <button id="c">增加</button>
